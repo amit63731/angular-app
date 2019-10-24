@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as $ from 'jquery'; 
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-angular-project';
+
+  ngOnInit() {
+    $(document).ready(function() {
+      alert('I am Called From jQuery');
+    });
+ }
 }

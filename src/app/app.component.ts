@@ -10,8 +10,11 @@ export class AppComponent {
   title = 'my-angular-project';
 
   ngOnInit() {
-    $(document).ready(function() {
-      alert('I am Called From jQuery');
-    });
+  this.jqueryFunction();
+ }
+ jqueryFunction():void{
+  $(document).ready(function() {
+    console.log('I am Called From jQuery');
+  });
  }
 }
